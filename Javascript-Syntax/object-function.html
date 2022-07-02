@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>An object method is a function defination,stored as property value.</h2>
+    <p id="test"></p>
+
+
+    <script>
+        //create an object
+        let person={
+            firstname:"vivek",
+            lastname:"gupta",
+            age:21,
+            fullname:function(){
+                return this.firstname + " " +this.lastname +" " + this.age;
+            }
+        };
+        //display data from the object 
+        document.getElementById("test").innerHTML=person.fullname();
+        document.getElementById("test").style.fontSize="30px";
+    </script>
+    
+</body>
+</html>

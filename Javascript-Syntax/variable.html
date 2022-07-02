@@ -7,24 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+  
     <p id="demo"></p>
+    <p id="test"></p>
+    <p id="test2"></p>
+    <button type="button" onclick="func()">click me!</button>
+    </p>
+
 
 
     <script>
-        var x=5;
-        var x=9;
-            x=10;
+        let x,y,z;
+        x=5; y=60;z=9;z=x+y;
 
-            // using let 
-            let y=6;
-            y=9;
-            document.write(y); 
+        document.getElementById("demo").innerHTML="the value of z is "+ z + "."
+        
 
-            // using const
-            const z=9;
-            document.write(z);
-            
-        document.write(x);
+        function func(){
+            document.getElementById('test').innerHTML="hello user!";
+            document.getElementById('test2').innerHTML="How are you?"
+        }
     </script>
 
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- there are two way to access an object property
+    
+    1.object-name.object-key => person.firstnmae
+    2.object-name[object-key] => person["firstname"]
+-->
+    <p id="test"></p>
+    <script>
+        const person={
+            firstname:'vivek',
+            lastname:'gupta',
+            age:21,
+            eyecolor:'blue'
+        };
+
+        document.getElementById('test').innerHTML=person["firstname"] + " is "+person.age+"years old.";
+    </script>
+    
+</body>
+</html>
