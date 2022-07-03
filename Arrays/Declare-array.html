@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="testt"></p>
+    <script>
+        let car=['volvo','bmw','tata'];
+        document.getElementById('testt').innerHTML=car[2];
+
+        // if i have to change array element
+        car[2]="toyota";
+        document.getElementById('testt').innerHTML=car;
+    </script>
+</body>
+</html>

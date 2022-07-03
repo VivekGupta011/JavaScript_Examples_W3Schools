@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="testing" style="position: relative; left: 0px"></p>
+    <button type="button" onclick="myfun()">Click me!</button>
+
+    <script>
+      function myfun() {
+        let num = 8;
+        let text=" ";
+        for (let i = 0; num > i; num--) {
+          document.getElementById("testing").innerHTML += `${num} ${text} <br>`;
+          document.getElementById("testing").style.fontSize='45px';
+
+        }
+      }
+    </script>
+  </body>
+</html>

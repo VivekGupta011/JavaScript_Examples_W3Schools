@@ -4,7 +4,7 @@ let obj={
     id:45867,
     fullname:function(){
         return this.firstname + this.lastname;
-        console.log(this);~
+        console.log(this);
     },
     address:{
         street:"123,dhanani nagar",
