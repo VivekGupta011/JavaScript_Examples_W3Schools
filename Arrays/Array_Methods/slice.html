@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>when the slice() method is given two argument,it selected array elements from the start argument and up to(but not included the end of agument)</p>
+
+    <p id="tst1"></p>
+    <p id="tst2"></p>
+
+    <script>
+        const fruits=["banana","mango","apple","cherry","papaya"];
+        document.getElementById('tst1').innerHTML=fruits;
+        let varr=fruits.slice(1,3);
+        document.getElementById('tst2').innerHTML=varr;
+
+    </script>
+</body>
+</html>

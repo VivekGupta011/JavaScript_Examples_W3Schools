@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>how to add two or three array in single array using concat() => concat method</p>
+    <p>The concat() method merges arrays:</p>
+    <p id="testing"></p>
+    <p id="testing1"></p>
+    
+    <script>
+            const fruits=['apple','mango'];
+            const fruits1=['banana','orange'];
+            const fruits2=['banana','orange','kiwi','dragon-fruits'];
+            const fruit_add=fruits.concat(fruits1);
+            const fruit_add1=fruits.concat(fruits1,fruits2);
+            document.getElementById('testing').innerHTML=fruit_add;
+            document.getElementById('testing1').innerHTML=fruit_add1;
+        </script>
+</body>
+</html>
