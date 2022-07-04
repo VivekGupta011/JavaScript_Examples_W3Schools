@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p>the typeof operator returns the type of a variable object..</p>
+    <p id="func-test"></p>
+
+
+    <script>
+        document.getElementById('func-test').innerHTML=
+        typeof "vivek" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof NaN + "<br>" +
+        typeof false + "<br>"  +
+        typeof [1,23,4,45] + "<br>" +
+        typeof {name:vivek,class:12} + "<br>"+
+        typeof new Date() + "<br>" +
+        typeof function(){} + "<br>" +
+        typeof mycar + "<br>" +
+        typeof null;
+    </script>
+</body>
+</html>
+
+<!-- bug in this code ? solve first -->
