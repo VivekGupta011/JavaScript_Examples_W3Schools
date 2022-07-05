@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+    <p id="test1"></p>
+
+    <script>
+        let fruits=['apple','banana','mango','lichi','apple',"Banana", "Orange", "Apple", "Mango", "Apple"];
+    
+        
+        // find the first index of "apple"
+
+
+        let fruit=fruits.indexOf('apple');
+        document.getElementById('test').innerHTML=fruit;
+
+
+        // start at index of 3
+        let index=fruits.indexOf("apple",3);
+        document.getElementById('test1').innerHTML=index;
+
+
+
+        // syntax=>array.indexof(item,start)
+
+
+        // find the first index of apple starting from the last element
+        let indexx=fruits.indexOf("apple",-1);
+
+    </script>
+</body>
+</html>
