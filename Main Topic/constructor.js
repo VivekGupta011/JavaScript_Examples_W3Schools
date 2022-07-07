@@ -64,6 +64,7 @@ console.log(student2);
 function storedata(firstname,lastname,student_id){
 
     let studentt={
+        
         firstname:firstname,
         lastname:lastname,
         student_id:student_id,
