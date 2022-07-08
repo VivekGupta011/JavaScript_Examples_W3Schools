@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is example of callback function..</title>
+</head>
+<body>
+    <p>this is example of callback function.</p>
+    <p id="testing"></p>
+
+
+    <script>
+        function display(some){
+            document.getElementById('testing').innerHTML=some;
+        }
+
+
+        function myCalculator(num1,num2,num3){
+            let operation=num1+num2+num3;
+            display(operation);
+        }
+
+            myCalculator(12,20,30);
+    </script>
+</body>
+</html>
