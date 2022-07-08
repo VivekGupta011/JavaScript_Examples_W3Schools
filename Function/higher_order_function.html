@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher order functions</title>
+</head>
+<body>
+    <!-- higher order functions=> A function which take a function as a parameter and return function. -->
+    
+
+    <p id="cb"></p>
+
+
+    <script>
+        function callback(same){
+            document.getElementById('cb').innerHTML=same;
+
+        } 
+
+        let callback1=(a,b)=>{
+            let sum=a+b;
+            callback(sum);
+            
+            
+        }
+        callback1(5,10);
+
+
+
+        // return function
+        let callback_return=x=>console.log("hello" + x);
+               
+        
+
+        callback_return(" vivek ");
+    </script>
+</body>
+</html>
