@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ipsa!</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum expedita maiores culpa accusantium iure atque nobis aliquid a voluptate perferendis repellat iste corrupti totam nisi, quam est, impedit recusandae!</h1>
+
+    </div>
+    <p id="demo"></p>
+
+
+    <script>
+        let x=document.getElementById('main');
+        let y=x.getElementsByTagName('h1');
+        document.getElementById('demo').innerHTML="the first paragraph (index 0) inside main is:" +y[1].innerHTML;
+    </script>
+</body>
+</html>

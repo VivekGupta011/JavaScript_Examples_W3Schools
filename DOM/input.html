@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="">
+        <label for="">Enter First Number:</label>
+        <br>
+        <input type="text" id="val1"/>
+        <br>
+        <br>
+        <label for="">Enter Second Number:</label>
+        <br>
+        <input type="text" id="val2"/>
+        <br>
+        <br>
+        <button onclick="getadd()">Click to Add</button>
+        <br>
+        <p id="testing"></p>
+    </form>
+
+    <script>
+        function getadd(){
+        const value1=Number(document.getElementById('val1').value);
+        const value2=Number(document.getElementById('val2').value);
+        const add=value1 + value2;
+        console.log(add);
+
+
+        // display the content on pages
+        document.getElementById('testing').innerHTML= "Addition is:" + add;
+
+        document.getElementById('testing').style.color='red';
+        }
+    </script>
+</body>
+</html>

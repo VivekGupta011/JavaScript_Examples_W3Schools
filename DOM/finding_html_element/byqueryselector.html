@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="into">this is first paragraph</p>
+    <p class="into">this is second paragraph</p>
+    <p class="into">this is third paragraph</p>
+    <p class="into">this is forth paragraph</p>
+    <p class="into">this is five paragraph</p>
+
+   
+    <strong>  <p id="testing"></p> </strong>
+
+    <script>
+        const element=document.querySelectorAll('.into');
+        document.getElementById('testing').innerHTML="this is second paragraph element " +element.innerHTML;
+
+    </script>
+</body>
+</html>
