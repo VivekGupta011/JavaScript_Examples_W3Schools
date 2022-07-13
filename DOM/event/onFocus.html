@@ -8,13 +8,32 @@
 </head>
 <body>
     <form action="">
-        <input type="text" onfocus="myfun(this)">
+        <input type="text" id="myid" onmouseout="myfunction1()" onmousemove="myfun()">
     </form> 
+
+    <P onclick="myfunc(this)">HELLO</P>
+
+
+
+    
 
 
     <script>
-        function myfun(obj){
-            obj.style.backgroundColor='red';
+
+
+    function myfunction1(){
+        document.getElementById('myid').style.backgroundColor='white';
+    } 
+
+
+    function myfunc(obj){
+        obj.innerHTML='INERHTML';
+        console.log(this);
+        obj.style.color="red";
+    } 
+        function myfun(){
+            document.getElementById('myid').style.backgroundColor='red';
+            document.getElementById('myid').placeholder='hello vivek'
         }
     </script>
 </body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- the addEventListner() method attaches an event handler to an element wihout overwriting existing event handler
+    
+    Note:you can handle many event hadler to one element 
+    
+    -->
+
+    <button id="mybtn">Try it</button>
+
+
+    <script>
+        var x= document.getElementById('mybtn');
+        x.addEventListener('click',functt);
+        x.addEventListener("click",funct);
+        x.addEventListener('onmouseover',funct3(this));
+        x.addEventListener('onmousedown',funct4(this));
+        
+        function funct(){
+            alert("Hello User!");
+        }
+        function functt(){
+           x.innerHTML="vivek";
+        }
+
+        function funct3(obj){
+            x.style.color='red';
+
+        }
+        function funct4(obj){
+            x.style.background='green';
+        }
+        </script>
+</body>
+</html>

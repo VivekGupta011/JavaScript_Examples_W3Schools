@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="    text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+/* margin-left: auto; */
+/* margin-right: auto; */">
+
+
+
+    <div style="width: 150px; color:blue;padding:15%;background-color: aqua;" id="myid2">
+    
+        <div style="    background-color: red;
+        padding: 50%;" id="myid1">
+        
+        </div>
+    </div>
+    <br>
+    <br>
+    
+
+    <script>
+        let x=document.getElementById('myid2');
+        let y=document.getElementById('myid1');
+        x.addEventListener("click",function(){
+            alert("this is first alert box!")
+        })
+        y.addEventListener("click",function(){
+            alert("this is second alert box!");
+        })
+
+
+    </script>
+
+
+</body>
+</html>
