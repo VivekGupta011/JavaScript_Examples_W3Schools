@@ -34,8 +34,7 @@ function login(){
     });
 }
 function Retrive_data(){
-
-   return new Promise(function(resolve,reject){
+   let result=new Promise(function(resolve,reject){
     setTimeout(()=>{
         console.log('Retriving data from server');
         resolve();
@@ -43,15 +42,25 @@ function Retrive_data(){
 
 
     });
+   return result;
 }
 function Show_data(){
 
    return new Promise(function(resolve,reject){
     setTimeout(()=>{
         console.log('Show data from server');
+        
         resolve("this is from Show_data => resolve function");
     },1000);
 
+
+    });
+}
+function All_set(){
+    return new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            console.log("All Set...")
+        },3000)
 
     });
 }
@@ -66,6 +75,7 @@ register()
 })
 .then(Retrive_data)
 .then(Show_data)
+.then(All_set)
 .catch(()=>{
     console.log("this is error occured");
 }); 

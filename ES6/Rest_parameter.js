@@ -27,3 +27,15 @@ let summ=[4,6,54,45,9];
 funct(...summ);
 
 
+
+
+function funct_testing(a,b,c,d){
+    console.log("this is rest parametr which mean we giving spread operator as a parameter");
+    let sum=a+b+c+d;
+    console.log(sum);
+}
+
+
+let testing=[3,5,67,8,65,54];
+
+funct_testing(...testing);

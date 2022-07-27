@@ -3,6 +3,9 @@
 const arrvalue=['my','name','is','vivek'];
 console.log(arrvalue);
 console.log(...arrvalue);
+
+const arrvalue3=[...arrvalue,'vivek','gupta'];
+console.log("this is arrvalue3:",arrvalue3);
 // above code is equiavalent to console.log('my','name','is','vivek');
 
 // the spread operator "..." is used to expand or spread an iterable

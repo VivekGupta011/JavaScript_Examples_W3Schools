@@ -51,9 +51,18 @@ function register(){
          console.log('Show data from server');
          resolve("this is from Show_data => resolve function");
      },1000);
+
+     
  
  
      });
+ }
+ function all_set(){
+    return new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            console.log("All set!..")
+         },3000)
+    })
  }
  
 
@@ -64,12 +73,10 @@ function register(){
     await login();
     await Retrive_data();
     await Show_data();
+    await all_set();
    }catch(error){
     return `Caught an error:${error}`;
 
-   }finally{
-    console.log('All done!');
-    
    }
 
  }
