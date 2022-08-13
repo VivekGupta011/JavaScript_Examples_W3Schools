@@ -15,7 +15,7 @@ export function greetPerson(name) {
   console.log(name); 
 
 
-  export default function(){
+  export default function App(){
     console.log("this is default module..");
   }
   

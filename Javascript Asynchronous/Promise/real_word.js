@@ -66,7 +66,7 @@ function All_set(){
 }
 
 register()
-.then(Send_eamil)
+.then(Send_eamil)  
 .then(login)
 .finally(()=>{
    setTimeout(()=>{

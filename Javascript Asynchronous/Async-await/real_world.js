@@ -71,7 +71,7 @@ function register(){
     await register();
     await Send_eamil();
     await login();
-    await Retrive_data();
+    await Retrive_data();   
     await Show_data();
     await all_set();
    }catch(error){
