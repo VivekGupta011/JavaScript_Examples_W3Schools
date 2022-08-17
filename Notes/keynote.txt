@@ -1,0 +1,1 @@
+//first class function=> a function which take function as argument known as first class function and other word 'callback'

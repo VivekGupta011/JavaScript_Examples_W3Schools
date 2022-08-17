@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // find 2*math.pi*radious*height
+      let radious_data = [3, 5,8, 7, 9];
+      let height_data = [2, 7, 9, 5];
+
+
+    //   find  number
+
+    function odd(x){
+        return x%2;
+    }
+    console.log(
+        radious_data.filter(odd)
+    )
+
+      function iterate_value(radious_data, height_data) {
+        let output = [];
+        for (let i = 0; i < radious_data.length; i++) {
+          let result_area = 2 * Math.PI * radious_data[i] * height_data[i];
+          console.log(result_area);
+          output.push(result_area);
+        }
+        return `formula value in form array=> ${output}`;
+      }
+
+      console.log(iterate_value(radious_data, height_data));
+
+      console.log(
+        radious_data.map((item1) => {
+          height_data.map((item2) => {
+            let result_area_using_map = parseInt(2 * Math.PI * item1 * item2);
+            return `this is value we get using map=> ${result_area_using_map}`;
+          });
+        })
+      );
+    </script>
+  </body>
+</html>
