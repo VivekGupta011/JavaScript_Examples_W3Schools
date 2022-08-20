@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" id="testing_img">
+    
+    <script>
+        fetchdata();
+        async function fetchdata(){
+            let response=await fetch('../images/pic_bulbon.gif');
+            let data=await response.blob();
+            document.getElementById("testing_img").src=URL.createObjectURL(data);
+
+
+        }
+    </script>
+    
+</body>
+</html>
