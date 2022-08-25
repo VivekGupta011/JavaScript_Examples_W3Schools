@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="testing+" onclick="increase('10')">+</button>
+    <input type="number" name="" id="btn-input" value="1">
+    <button id="testing-" onclick="decrease('0')">-</button>
+
+   <script>
+       
+
+     function increase(max){
+        document.getElementById('btn-input').value=parseInt(document.getElementById('btn-input').value) + 1;
+        if(document.getElementById('btn-input').value>parseInt(max))
+        document.getElementById('btn-input').parseInt(max);
+
+
+    }
+     function decrease(min){
+        document.getElementById('btn-input').value=parseInt(document.getElementById('btn-input').value) - 1;
+        if(document.getElementById('btn-input').value>parseInt(min)){
+
+            document.getElementById('btn-input').parseInt(min);
+        }
+
+
+    }
+
+   </script>
+
+    
+</body>
+</html>
